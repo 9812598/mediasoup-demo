@@ -24,6 +24,9 @@ class ChatInput extends React.Component {
 		const { text } = this.state;
 
 		const disabled = !connected || (!chatDataProducer && !botDataProducer);
+		console.log('connected--', connected);
+		console.log('chatDataProducer--', chatDataProducer);
+		console.log('botDataProducer--', botDataProducer);
 
 		return (
 			<div data-component="ChatInput">
