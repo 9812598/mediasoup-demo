@@ -162,8 +162,7 @@ async function runDev() {
 }
 
 function open(query: string) {
-	// const protocol = https ? 'https' : 'http';
-	const protocol = 'https';
+	const protocol = https ? 'https' : 'http';
 	const url = `${protocol}://${host}:${port}/?${query}`;
 
 	openBrowser(url);
